@@ -17,11 +17,12 @@ body {
     font-family: $defaultFont;
     font-weight: $lightWeight;
     min-width: 320px;
+    background-color: #FFFFF9;
 }
 
 
 /* --------------------------- HEADER --------------------------- */
-#headerWrapper {border-bottom: 1px solid $greyColor;}
+// #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
@@ -30,8 +31,9 @@ header {
     padding: .5rem $gutter;
     span {
         font-size: 1.6rem;
-        font-weight: $lightWeight;
-        color: $primaryColor;
+        // font-weight: $lightWeight;
+        font-family: "Bokor", system-ui;
+        color: black;
     }
 } // end header
 
@@ -44,13 +46,13 @@ header {
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: #444;
+    color: black;
     &:before {
         content: "\2630"
     }
 }
 nav {
-    background-color: #f7f7f7;
+    background-color: #3B1C32;
     width: 180px;
     position: absolute;
     top: 0;
@@ -68,13 +70,13 @@ nav {
         text-align: right;
         border-bottom: 1px rgba(0,0,0,0.25) solid;
         text-decoration: none;
-        color: $primaryColor;
+        color: #a79494;
     }
     ul li a:hover {
         background-color: rgba(0,0,0,0.1);
     }
     li.active a {
-        color: $secondaryColor;
+        color: black;
     }
 } //end of nav
 .moveover #hamburgerBtn::before {
@@ -90,30 +92,36 @@ nav {
 }
 
 
-
 /* --------------------------- MAIN --------------------------- */
 main {
+    padding: 10px;
     h1 {
         padding: 1rem $gutter.5rem $gutter;
         font-size: 1.5rem;
-        color: $secondaryColor;
+        color: $primaryColor;
         font-weight: $lightWeight
     }
     p {
         padding: .5rem $gutter;
-        color: #333;
+        color: white;
         line-height: $leading;
     }
 }// end main
+
 
 #cards {
     section {
         display: grid;
         grid-template-areas: 
-        "phone" 
-        "city" 
         "photo" 
-        "address";
+        "city"
+        "address"
+        "phone";
+    }
+    img {
+        grid-area: photo;
+        width: 100%;
+        height: auto;
     }
     address{grid-area: address;}
     img {grid-area: photo;}
@@ -122,27 +130,18 @@ main {
 
 } //end of cards parent
 
-// grid-template-area {
-//     "name"
-//     "photo"
-//     "address"
-//     "phone";
-// }
 
-// img {grid-area: photo;}
-// h2 {grid-area: name;}
-// address {grid-area: address;} 
-// a {grid-area: phone;}
+
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-    background-color: $primaryColor
+    background-color: green;
 } // end footer wrapper
 
 footer {
     font-size: .85rem;
     padding: 1rem $gutter;
-    color: $greyColor;
+    color: red;
     text-align: center;
     line-height: $leading;
     a {color: $greyColor;}

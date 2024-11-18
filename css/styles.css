@@ -317,13 +317,10 @@ body {
   font-family: "Spline Sans", sans-serif;
   font-weight: 300;
   min-width: 320px;
+  background-color: #FFFFF9;
 }
 
 /* --------------------------- HEADER --------------------------- */
-#headerWrapper {
-  border-bottom: 1px solid #ccc;
-}
-
 header {
   display: grid;
   grid-template-columns: 50px auto 44px;
@@ -334,8 +331,8 @@ header {
 }
 header span {
   font-size: 1.6rem;
-  font-weight: 300;
-  color: #1d295f;
+  font-family: "Bokor", system-ui;
+  color: black;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -346,14 +343,14 @@ header span {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #444;
+  color: black;
 }
 #hamburgerBtn:before {
   content: "☰";
 }
 
 nav {
-  background-color: #f7f7f7;
+  background-color: #3B1C32;
   width: 180px;
   position: absolute;
   top: 0;
@@ -372,13 +369,13 @@ nav ul li a {
   text-align: right;
   border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
   text-decoration: none;
-  color: #1d295f;
+  color: #a79494;
 }
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 nav li.active a {
-  color: #7c1d47;
+  color: black;
 }
 
 .moveover #hamburgerBtn::before {
@@ -396,27 +393,52 @@ nav li.active a {
 }
 
 /* --------------------------- MAIN --------------------------- */
+main {
+  padding: 10px;
+}
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #ffffff;
   font-weight: 300;
 }
 main p {
   padding: 0.5rem 10px;
-  color: #333;
+  color: white;
   line-height: 150%;
+}
+
+#cards section {
+  display: grid;
+  grid-template-areas: "photo" "city" "address" "phone";
+}
+#cards img {
+  grid-area: photo;
+  width: 100%;
+  height: auto;
+}
+#cards address {
+  grid-area: address;
+}
+#cards img {
+  grid-area: photo;
+}
+#cards h2 {
+  grid-area: city;
+}
+#cards a {
+  grid-area: phone;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: green;
 }
 
 footer {
   font-size: 0.85rem;
   padding: 1rem 10px;
-  color: #ccc;
+  color: red;
   text-align: center;
   line-height: 150%;
 }
@@ -426,6 +448,57 @@ footer a {
 
 @media only screen and (min-width: 35rem) {
   /* NAVIGATION STUFF GOES HERE  */
+  #hamburgerBtn {
+    display: none;
+  }
+  .moveover > .content {
+    transform: translateX(0px);
+  }
+  nav {
+    background-color: transparent;
+    position: static;
+    transform: translateX(0);
+    width: auto;
+  }
+  nav ul {
+    display: flex;
+    margin-left: 10px;
+  }
+  nav ul li a {
+    padding: 0.6rem 1.5rem;
+    border: none;
+  }
+  #navWrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 10px -5px rgba(255, 255, 255, 0.4);
+  }
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Padding around the grid */
+  }
+  #cards section {
+    grid-template-areas: "photo" "city" "address" "phone";
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 3px;
+    background-color: red;
+  }
+  #cards section img {
+    grid-area: photo;
+    width: 100%;
+    height: auto;
+  }
+  #cards section h2 {
+    padding: 0;
+    margin: 0.3rem 0 0.3rem 0;
+  }
+  #cards section a {
+    margin: 0 0 1rem 0;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -453,7 +526,36 @@ footer a {
     padding: 0.6rem 1.5rem;
     border: none;
   }
-  #navWrapper {
-    background-color: #f7f7f7;
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  #cards section {
+    text-align: center;
+    padding: 20px 10px 0 20px;
+    grid-template-areas: "city city" "photo address" "photo phone";
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 4px;
+  }
+  #cards section a {
+    width: 50%;
+    height: 20%;
+    background-color: yellow;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  #cards section address {
+    width: 50%;
+    height: 20%;
+    background-color: yellow;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #cards section img {
+    grid-area: photo;
+    width: 100%;
+    height: auto;
   }
 }
