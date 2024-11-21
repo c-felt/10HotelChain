@@ -9,13 +9,13 @@ export const hotels =
     {
     "city": "Interlaken",
     "photo": "HouseReplace2.jpg",
-    "address": ["404 Alpenweg", "Interlaken, BE 3800, Switzerland"],
+    "address": ["404 Alpenweg", "Interlaken, BE, Switzerland"],
     "phone": "+41 33 555 4040"
     },
     {
     "city": "Hakone",
     "photo": "HouseReplace4.jpg",
-    "address": ["606 Cedar Way", "Hakone, Kanagawa 250-0522, Japan"],
+    "address": ["606 Cedar Way", "Hakone, Kanagawa, Japan"],
     "phone": "+81 460 555 6060"
     },
     {
@@ -45,7 +45,7 @@ export const hotels =
     {
     "city": "Spokane",
     "photo": "HouseReplace5.jpg",
-    "address": ["789 Pinecrest Lane", "Spokane, WA 994201"],
+    "address": ["789 Pinecrest Lane", "Spokane, WA 99201"],
     "phone": "928-555-2020"
     }
 ]

@@ -408,10 +408,10 @@ main h1 {
 #cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px; /* Space between grid items */
-  justify-items: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  padding: 5px; /* Padding around the grid */
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
 }
 #cards div {
   text-align: center;
@@ -429,6 +429,7 @@ main h1 {
   grid-area: photo;
   width: 100%;
   height: auto;
+  border-radius: 6px;
 }
 #cards h2 {
   grid-area: city;
@@ -454,6 +455,7 @@ main h1 {
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
   background-color: #3B1C32;
+  margin-top: 30px;
 }
 
 footer {
@@ -506,14 +508,14 @@ footer a {
   }
   #cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Space between grid items */
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Padding around the grid */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
   }
   #cards div {
-    grid-template-areas: "photo" "city" "address" "phone";
+    grid-template-areas: "photo city" "photo address" "phone phone";
     -moz-column-gap: 8px;
          column-gap: 8px;
     row-gap: 3px;
@@ -537,6 +539,7 @@ footer a {
     border-radius: 5px;
     padding: 10px;
     color: #3B1C32;
+    margin-top: 7px;
   }
   #cards div address {
     color: #FFFFF9;
@@ -578,13 +581,13 @@ footer a {
     grid-auto-rows: minmax(100px, auto);
     max-width: 960px;
     margin: 0 auto;
-    gap: 20px; /* Space between grid items */
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Padding around the grid */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
   }
   #cards div {
-    grid-template-areas: "city city" "photo address" "phone phone";
+    grid-template-areas: "photo city" "photo address" "phone phone";
     -moz-column-gap: 8px;
          column-gap: 8px;
     row-gap: 3px;

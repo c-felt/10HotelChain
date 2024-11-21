@@ -22,16 +22,14 @@ body {
 
 
 /* --------------------------- HEADER --------------------------- */
-// #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
     column-gap: $gutter;
-    align-items: center; //vertically
+    align-items: center;
     padding: .5rem $gutter;
     span {
         font-size: 2.5rem;
-        // font-weight: $lightWeight;
         font-family: "Bokor", system-ui;
         color: black;
     }
@@ -85,14 +83,13 @@ nav {
     content: "\2715";
 }
 .moveover>.content {
-    transform: translateX(-180px); //moves everything to the side
-    transition: transform 500ms ease; //animates the slide
+    transform: translateX(-180px); 
+    transition: transform 500ms ease; 
 }
 #pageWrapper {
-    position: relative;// stops the page from scrolling to the right
-    overflow-x: hidden; //stops extra space to the right of the nav links
+    position: relative;
+    overflow-x: hidden;
 }
-
 
 /* --------------------------- MAIN --------------------------- */
 main {
@@ -104,16 +101,14 @@ main {
         font-weight: $lightWeight
     }
 }// end main
-
-
 #cards {
     //new
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px; /* Space between grid items */
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    padding: 5px; /* Padding around the grid */
+    gap: 20px;
+    justify-items: center; 
+    align-items: center;
+    padding: 5px;
     //end of new
     div {
         text-align: center;
@@ -131,7 +126,8 @@ main {
             color: black;}
     img {grid-area: photo;
         width: 100%;
-        height: auto;}
+        height: auto;
+        border-radius: 6px;}
     h2 {grid-area: city;
         padding: 5px;
         margin: 0;
@@ -150,11 +146,10 @@ main {
         text-decoration: underline;
     }
 } //end of cards parent
-
-
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
     background-color: #3B1C32;
+    margin-top: 30px;
 } // end footer wrapper
 
 footer {

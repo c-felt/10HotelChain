@@ -25,9 +25,7 @@ nav {
     }
 }
 
-
 //new
-
 //HOTEL INFO
 #cards {
     //new
@@ -36,16 +34,14 @@ nav {
     grid-auto-rows: minmax(100px, auto); //new
     max-width: 960px; //new
     margin: 0 auto; //new
-
-    // grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px; /* Space between grid items */
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Padding around the grid */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
     //end of new
     div {
         grid-template-areas: 
-        "city city" 
+        "photo city" 
         "photo address"
         "phone phone";
         column-gap: 8px;
@@ -63,7 +59,6 @@ nav {
         }
         a{
             margin: 0 0 1rem 0;
-            // font-size: 50%;
             background-color: #FFAB00;
             border: 3px solid #FFAB00;
             border-radius: 5px;
@@ -75,7 +70,6 @@ nav {
             text-overflow: ellipsis;
             white-space: nowrap;
             padding-top: 70px;
-            // font-size: 50%;
         }
     }
     .hotel-card {
@@ -86,6 +80,8 @@ nav {
 //end of new
 
 
+
+//old code
 // //HOTEL INFO
 // #cards {
 //     //new
