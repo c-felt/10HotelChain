@@ -330,7 +330,7 @@ header {
   padding: 0.5rem 10px;
 }
 header span {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-family: "Bokor", system-ui;
   color: black;
 }
@@ -370,12 +370,14 @@ nav ul li a {
   border-bottom: 1px rgba(0, 0, 0, 0.25) solid;
   text-decoration: none;
   color: #a79494;
+  font-family: "Spline Sans", sans-serif;
+  font-weight: 400;
 }
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 nav li.active a {
-  color: black;
+  color: #FFFFF9;
 }
 
 .moveover #hamburgerBtn::before {
@@ -399,13 +401,8 @@ main {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #3B1C32;
   font-weight: 300;
-}
-main p {
-  padding: 0.5rem 10px;
-  color: white;
-  line-height: 150%;
 }
 
 #cards {
@@ -424,6 +421,9 @@ main p {
 #cards address {
   grid-area: address;
   padding: 5px;
+  font-family: "Spline Sans", sans-serif;
+  font-weight: 300;
+  color: black;
 }
 #cards img {
   grid-area: photo;
@@ -434,25 +434,41 @@ main p {
   grid-area: city;
   padding: 5px;
   margin: 0;
+  font-family: "Bokor", system-ui;
+  color: black;
 }
 #cards a {
   grid-area: phone;
+  font-family: "Spline Sans", sans-serif;
+  color: black;
+  background-color: #FFAB00;
+  border: 3px solid #FFAB00;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 2px;
+}
+#cards a:hover {
+  text-decoration: underline;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: green;
+  background-color: #3B1C32;
 }
 
 footer {
   font-size: 0.85rem;
   padding: 1rem 10px;
-  color: red;
+  color: #f2f2f2;
   text-align: center;
   line-height: 150%;
+  font-family: "Spline Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 footer a {
-  color: #ccc;
+  color: #f2f2f2;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -468,6 +484,7 @@ footer a {
     position: static;
     transform: translateX(0);
     width: auto;
+    border-bottom: 2px solid #3B1C32;
   }
   nav ul {
     display: flex;
@@ -476,6 +493,13 @@ footer a {
   nav ul li a {
     padding: 0.6rem 1.5rem;
     border: none;
+  }
+  nav ul li a:hover {
+    background-color: #c9b5c3;
+    color: #FFFFF9;
+  }
+  nav li.active a {
+    color: black;
   }
   #navWrapper {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -494,7 +518,8 @@ footer a {
     -moz-column-gap: 8px;
          column-gap: 8px;
     row-gap: 3px;
-    background-color: red;
+    background-color: #3B1C32;
+    padding: 10px;
   }
   #cards div img {
     grid-area: photo;
@@ -504,9 +529,22 @@ footer a {
   #cards div h2 {
     padding: 0;
     margin: 0.3rem 0 0.3rem 0;
+    color: #FFFFF9;
   }
   #cards div a {
     margin: 0 0 1rem 0;
+    background-color: #FFAB00;
+    border: 3px solid #FFAB00;
+    border-radius: 5px;
+    padding: 10px;
+    color: #3B1C32;
+  }
+  #cards div address {
+    color: #FFFFF9;
+  }
+  #cards .hotel-card {
+    border: 3px solid #3B1C32;
+    border-radius: 8px;
   }
 }
 @media only screen and (min-width: 64rem) {
@@ -551,7 +589,7 @@ footer a {
     -moz-column-gap: 8px;
          column-gap: 8px;
     row-gap: 3px;
-    background-color: red;
+    background-color: #3B1C32;
     padding: 10px;
   }
   #cards div img {
@@ -565,15 +603,20 @@ footer a {
   }
   #cards div a {
     margin: 0 0 1rem 0;
-    background-color: blue;
-    border: 3px solid black;
+    background-color: #FFAB00;
+    border: 3px solid #FFAB00;
     border-radius: 5px;
     padding: 10px;
+    margin-top: 7px;
   }
   #cards div address {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     padding-top: 70px;
+  }
+  #cards .hotel-card {
+    border: 3px solid #3B1C32;
+    border-radius: 8px;
   }
 }

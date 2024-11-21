@@ -50,7 +50,7 @@ nav {
         "phone phone";
         column-gap: 8px;
         row-gap: 3px;
-        background-color: red;
+        background-color: #3B1C32;
         padding: 10px;
         img {
             grid-area: photo;
@@ -64,10 +64,11 @@ nav {
         a{
             margin: 0 0 1rem 0;
             // font-size: 50%;
-            background-color: blue;
-            border: 3px solid black;
+            background-color: #FFAB00;
+            border: 3px solid #FFAB00;
             border-radius: 5px;
             padding: 10px;
+            margin-top: 7px;
         }
         address {
             overflow: hidden;
@@ -76,6 +77,10 @@ nav {
             padding-top: 70px;
             // font-size: 50%;
         }
+    }
+    .hotel-card {
+        border: 3px solid #3B1C32;
+        border-radius: 8px;
     }
 } //end of cards parent
 //end of new

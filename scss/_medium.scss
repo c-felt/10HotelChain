@@ -10,6 +10,7 @@ nav {
     position: static;
     transform: translateX(0);
     width: auto;
+    border-bottom: 2px solid #3B1C32;
     ul{
         display: flex;
         margin-left: $gutter; 
@@ -17,6 +18,13 @@ nav {
     ul li a {
         padding: .6rem 1.5rem;
         border: none;
+    }
+    ul li a:hover {
+        background-color: #c9b5c3;
+        color: #FFFFF9;
+    }
+    li.active a {
+        color: black;
     }
 }
 #navWrapper {
@@ -44,7 +52,8 @@ nav {
         "phone";
         column-gap: 8px;
         row-gap: 3px;
-        background-color: red;
+        background-color: #3B1C32;
+        padding: 10px;
         img {
             grid-area: photo;
             width: 100%;
@@ -53,10 +62,23 @@ nav {
         h2 {
             padding: 0;
             margin: .3rem 0 .3rem 0;
+            color: #FFFFF9;
         }
         a{
             margin: 0 0 1rem 0;
+            background-color: #FFAB00;
+            border: 3px solid #FFAB00;
+            border-radius: 5px;
+            padding: 10px;
+            color: #3B1C32;
         }
+        address {
+            color: #FFFFF9;
+        }
+    }
+    .hotel-card {
+        border: 3px solid #3B1C32;
+        border-radius: 8px;
     }
 } //end of cards parent
 

@@ -30,7 +30,7 @@ header {
     align-items: center; //vertically
     padding: .5rem $gutter;
     span {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         // font-weight: $lightWeight;
         font-family: "Bokor", system-ui;
         color: black;
@@ -71,12 +71,14 @@ nav {
         border-bottom: 1px rgba(0,0,0,0.25) solid;
         text-decoration: none;
         color: #a79494;
+        font-family: 'Spline Sans', sans-serif;
+        font-weight: 400;
     }
     ul li a:hover {
         background-color: rgba(0,0,0,0.1);
     }
     li.active a {
-        color: black;
+        color: #FFFFF9;
     }
 } //end of nav
 .moveover #hamburgerBtn::before {
@@ -98,13 +100,8 @@ main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
         font-size: 1.5rem;
-        color: $primaryColor;
+        color: #3B1C32;
         font-weight: $lightWeight
-    }
-    p {
-        padding: .5rem $gutter;
-        color: white;
-        line-height: $leading;
     }
 }// end main
 
@@ -128,30 +125,46 @@ main {
         "phone";
     }
     address{grid-area: address;
-            padding: 5px;}
+            padding: 5px;
+            font-family: 'Spline Sans', sans-serif;
+            font-weight: 300;
+            color: black;}
     img {grid-area: photo;
         width: 100%;
         height: auto;}
     h2 {grid-area: city;
         padding: 5px;
-        margin: 0;}
-    a {grid-area: phone;}
-
+        margin: 0;
+        font-family: "Bokor", system-ui;
+        color: black;}
+    a {grid-area: phone;
+        font-family:'Spline Sans', sans-serif;
+        color: black;
+        background-color: #FFAB00;
+        border: 3px solid #FFAB00;
+        border-radius: 5px;
+        padding: 10px;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 } //end of cards parent
-
-
 
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-    background-color: green;
+    background-color: #3B1C32;
 } // end footer wrapper
 
 footer {
     font-size: .85rem;
     padding: 1rem $gutter;
-    color: red;
+    color: #f2f2f2;
     text-align: center;
     line-height: $leading;
-    a {color: $greyColor;}
+    font-family: 'Spline Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    a {color: #f2f2f2;}
 }// end footer
