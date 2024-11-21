@@ -33,19 +33,19 @@ export const hotels =
     {
     "city": "Portland",
     "photo": "HouseReplace3.jpg",
-    "address": ["456 Cedar Lane", "Portland, OR 97201"],
+    "address": ["456 Cedar Lane", "Portland, OR 975201"],
     "phone": "503-555-4567"
     },
     {
     "city": "Bend",
     "photo": "HouseReplace1.jpg",
-    "address": ["505 Redwood Boulevard", "Bend, OR 97701"],
+    "address": ["505 Redwood Road", "Bend, OR 977301"],
     "phone": "541-555-5050"
     },
     {
     "city": "Spokane",
     "photo": "HouseReplace5.jpg",
-    "address": ["789 Pinecrest Lane", "Spokane, WA 99201"],
+    "address": ["789 Pinecrest Lane", "Spokane, WA 994201"],
     "phone": "928-555-2020"
     }
 ]

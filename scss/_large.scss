@@ -25,50 +25,90 @@ nav {
     }
 }
 
+
+//new
+
 //HOTEL INFO
 #cards {
+    //new
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    section {
-        //new
-        text-align: center;
-        padding: 20px 10px 0 20px;
-        a {
-            width: 50%;
-            height: 20%;
-            background-color: yellow;
-            grid-row-start: 3;
-            grid-row-end: 3;
+    grid-auto-rows: minmax(100px, auto); //new
+    max-width: 960px; //new
+    margin: 0 auto; //new
 
-        }
-        address {
-            width: 50%;
-            height: 20%;
-            background-color: yellow;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        }
-
-        //end of new
-
-
+    // grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Padding around the grid */
+    //end of new
+    div {
         grid-template-areas: 
         "city city" 
         "photo address"
-        "photo phone";
+        "phone phone";
         column-gap: 8px;
-        row-gap: 4px;
-
+        row-gap: 3px;
+        background-color: red;
+        padding: 10px;
         img {
             grid-area: photo;
-            width: 100%;
-            height: auto;
+            width: 250px;
+            height: 250px;
+        }
+        h2 {
+            padding: 0;
+            margin: .3rem 0 .3rem 0;
+        }
+        a{
+            margin: 0 0 1rem 0;
+            // font-size: 50%;
+            background-color: blue;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        address {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding-top: 70px;
+            // font-size: 50%;
         }
     }
-    // img {
-    //     width: 100%;
-    //     height: auto;
-    // }
 } //end of cards parent
+//end of new
+
+
+// //HOTEL INFO
+// #cards {
+//     //new
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 20px; /* Space between grid items */
+//     justify-items: center; /* Center items horizontally */
+//     align-items: center; /* Center items vertically */
+//     padding: 20px; /* Padding around the grid */
+//     //end of new
+//     div {
+//         text-align: center;
+//         padding: 20px 10px 0 20px;
+
+//         grid-template-areas: 
+//         "city city" 
+//         "photo address"
+//         "photo phone";
+//         column-gap: 8px;
+//         row-gap: 4px;
+//     }
+//     img {
+//         grid-area: photo;
+//         width: 100%;
+//         height: auto;
+//     }
+//     .hotel-card {
+//         border: 3px solid black;
+//     }
+// } //end of cards parent
 

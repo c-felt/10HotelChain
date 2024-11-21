@@ -110,7 +110,16 @@ main {
 
 
 #cards {
-    section {
+    //new
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 5px; /* Padding around the grid */
+    //end of new
+    div {
+        text-align: center;
         display: grid;
         grid-template-areas: 
         "photo" 
@@ -118,14 +127,14 @@ main {
         "address"
         "phone";
     }
-    img {
-        grid-area: photo;
+    address{grid-area: address;
+            padding: 5px;}
+    img {grid-area: photo;
         width: 100%;
-        height: auto;
-    }
-    address{grid-area: address;}
-    img {grid-area: photo;}
-    h2 {grid-area: city;}
+        height: auto;}
+    h2 {grid-area: city;
+        padding: 5px;
+        margin: 0;}
     a {grid-area: phone;}
 
 } //end of cards parent

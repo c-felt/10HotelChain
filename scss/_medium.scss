@@ -25,12 +25,6 @@ nav {
 }
 
 
-
-// .parent {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-// }
-
 //HOTEL INFO
 #cards {
     //new
@@ -42,7 +36,7 @@ nav {
     align-items: center; /* Center items vertically */
     padding: 20px; /* Padding around the grid */
     //end of new
-    section {
+    div {
         grid-template-areas: 
         "photo"
         "city" 
@@ -65,5 +59,8 @@ nav {
         }
     }
 } //end of cards parent
+
+
+
 
 //next: I am pulling each photo, city, address, and phone number from a json data file with those four things together in a bracket, and there is 8 of them. Meaning, 8 differnt photos with differnet address and so forth. How can I edit the following JS code in order to put each of the grouping from the json data file inside is own div tag with a unique ID with in the section that the js code creates? The ID's should start with "hotel" then have a number after it going from 1 to 8. Here is my JS code:
